@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href={{ url_for('static',filename='style.css') }}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Education</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Awards</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#organisations" class="menu-btn">Organisations</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Yaswanth</div>
+                <div class="text-3">And I'm a <span class="typing">Programmer</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src={{ url_for('static',filename='myphoto.jpg') }} alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Yaswanth and I'm a <span class="typing-2"></span></div>
+                    <p>An enthusiastic sophomore with a good grasp in programming, Data Structures and Algorithms.
+                       Data structures include advanced structures like Segment tree(With Lazy propagation),
+                       Persistent Segment tree, Heaps and priority queues, Merge sort tree, Sparse Tables,
+                       Suffix structures of a string, Binary Search Trees, Trie Data structure.<br>
+                       A Data science enthusiast too involved in many projects like Quora Question Pair Similarity
+                       which is to predict which of the provided pairs of questions contain two questions with the same
+                       meaning, for features I used tf-idf word to vec and applied ML model.</p>
+                    <a href="{{ url_for('download_file') }}">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Education</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <div class="text" style="color: #f28a8a" >IIT Roorkee</div>
+                        <p>Bachelor of Technology in Computer Science and Engineering<br><b>CGPA : </b><i>9.33</i></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text" style="color: #f28a8a">Sri Chaitanya Junior College</div>
+                        <p>Class Twelth<br><b>CGPA : </b><i>9.86</i></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text" style="color: #f28a8a">Sri Chaitanya High School</div>
+                        <p>Class Tenth<br><b>CGPA : </b><i>9.5</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text" style="font-size:5vh;color: crimson">Professional experience</div>
+                    <p><b>Programming and Algorithm Group,</b> Currently a member of PAG, supporting peers and juniors in guiding towards
+                    Competitive programming and preparing questions for juniors, assist juniors in doubt
+                    solving.<br> My responsibilities include organizing, curating and testing programming problems for competitions, conducting lectures
+                    on data structures and algorithms.</p>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line java"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>C/C++</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="line c"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Data Structures and Algorithms</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="line dsa"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML&CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My Awards and Achievements</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='abs.jpg') }} alt="">
+                        <div class="text">Aditya Birla Scholarship</div>
+                        <p>Awarded by Aditya Birla Group of Companies to only 16 members from top 7 IIT's</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='pag.jpg') }} alt="">
+                        <div class="text">Programming and Algorithm group</div>
+                        <p> Selected for Programming club only 13 shortlisted among entire IIT Roorkee</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='advance.jpg') }} alt="">
+                        <div class="text">Joint Entarance Exam Advaced</div>
+                        <p>Secured an All India Rank of 317 out of 180 thousands candidates in open category.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='mains.jpg') }} alt="">
+                        <div class="text">Joint Entarance Exam Mains</div>
+                        <p>Secured an All India Rank of 220 out of 1.2 million candidates in open category.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='codechef.jpg') }} alt="">
+                        <div class="text">Codechef Competative programming</div>
+                        <p>5⭐ programmer at codechef (<b>Rating : 2044</b>). Attained Global Rank 2 in April Cook-Off Challenge.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='codeforces.jpg') }} alt="">
+                        <div class="text">Codeforces sponsored by telegram</div>
+                        <p>Expert Level at Codeforces, <b>Rating : 1886 (Best Global Rank : 150)</b><br>Given over 150 contests of CP.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='mcm.jpg') }} alt="">
+                        <div class="text">Merit Cum Means scholarship</div>
+                        <p>Awarded scholarship by Indian Institute of Technology Roorkee on merit basis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section start -->
+    <section class="about" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projects</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img style="height: 34vh;width: 15vw;border: 5px solid crimson;border-radius: 10px" src={{ url_for('static',filename='virtuallabs.jpeg') }} alt="">
+                </div>
+                <div class="column right">
+                    <div><b><h2 style="color: crimson">Virtual Labs<small><small><small>&nbsp;&nbsp; Flask, HTML, CSS and JS</small></small></small></h2></b>
+                            The project works as an online laboratory for performing salt analysis and detecting the cations and
+                            anions in the salt. The analysis is to be done on a random salt. It is like a practical exam where
+                            different reagents are given, and the student must select the correct reagent to use at a given step
+                            and select the appropriate option from the produced result, finally deducing the salt.
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="about-content">
+                <div class="column left">
+                    <img style="height: 34vh;width: 15vw;border: 5px solid crimson;border-radius: 10px" src={{ url_for('static',filename='medicare.png') }} alt="">
+                </div>
+                <div class="column right">
+                    <div><b><h2 style="color: crimson">Medicare<small><small><small>&nbsp;&nbsp; FireBase, Android Studio, Java, XML</small></small></small></h2></b>
+                            A Pill remainder app developed using Android studio. 57% of the global population suffer from a chronic illness
+A staggering 4,3 billion people globally are living with a chronic illness. An illness that may well mean consuming prescription medication on a daily basis for the rest of their lives.
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="about-content">
+                <div class="column left">
+                    <img style="height: 34vh;width: 15vw;border: 5px solid crimson;border-radius: 10px" src={{ url_for('static',filename='tree.jpg') }} alt="">
+                </div>
+                <div class="column right">
+                    <div><b><h2 style="color: crimson">Data Structures and Algorithms <small><small><small>&nbsp;&nbsp;C++ and Java</small></small></small></h2></b>
+                            Implemented all the data structures and some algorithms. Data structures include advanced structures like Segment
+                            tree(With Lazy propagation), Persistent Segment tree, Heaps and priority queues, Merge sort tree, Sparse Tables,
+                            Suffix structures of a string, Binary Search Trees, Trie Data structure.
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="about-content">
+                <div class="column left">
+                    <img style="height: 34vh;width: 15vw;border: 5px solid crimson;border-radius: 10px" src={{ url_for('static',filename='quora.jpg') }} alt="">
+                </div>
+                <div class="column right">
+                    <div><b><h2 style="color: crimson">Quora Question Pair Similarity<small><small><small>&nbsp;&nbsp; NLP Machine Learning</small></small></small></h2></b>
+                            The main aim of this project is to predict which of the provided pairs of questions contain two questions with the same
+                            meaning, for features I used tf-idf word to vec and applied ML model
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="about-content">
+                <div class="column left">
+                    <img style="height: 34vh;width: 15vw;border: 5px solid crimson;border-radius: 10px" src={{ url_for('static',filename='haberman.jpg') }} alt="">
+                </div>
+                <div class="column right">
+                    <div><b><h2 style="color: crimson">Haberman's Survival prediction<small><small><small>&nbsp;&nbsp; Machine Learning</small></small></small></h2></b>
+                            The main aim of this project is to predict the survival of patients who had undergone surgery for breast cancer. first
+                            explored the data and implemented the random forest on Haberman’s Survival Data Set.
+                        </div>
+                </div>
+            </div>
+            <br><br>
+
+        </div>
+    </section>
+
+    <!-- organisations section start -->
+    <section class="teams" id="organisations">
+        <div class="max-width">
+            <h2 class="title">Organisations and certifications</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='hacker.jpg') }} alt="">
+                        <div class="text">Hackerrank</div>
+                        <p>Got certified in Problem Solving Basic, Problem Solving Intermediate and Java.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='coursera.jpg') }} alt="">
+                        <div class="text">Coursera</div>
+                        <p>Got Certified in Interactivity with JavaScript(JS) by University of Michigan</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='linkedin.jpg') }} alt="">
+                        <div class="text">LinkedIn</div>
+                        <p>LinkedIn skill assessment badge for C++, Java, DSA and Machine Learning.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src={{ url_for('static',filename='ncc.jpg') }} alt="">
+                        <div class="text">NCC</div>
+                        <p>Worked as a cadet and participate in social service, rallies and awareness on road safety</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Want to Know more about my skills? Then message me by filling the form or contact me via Email, looking forward for your reply.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Yaswanth Chunduru</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Nellore, Andhra Pradesh</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">chunduru_v@cs.iitr.ac.in</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Created By <a href="https://www.linkedin.com/in/cvy/">Yaswanth</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
+
+    <script src={{ url_for('static',filename='script.js') }}></script>
+</body>
+</html>
